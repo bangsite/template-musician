@@ -6,7 +6,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
+  color:#111;
   .img__name {
     position: absolute;
     left: 0;
@@ -62,7 +62,7 @@ header {
       display: block;
       font-family: 'Dosis', sans-serif;
       color: $cl-font-light;
-      @include font-size(11px);
+      @include font-size(14px);
       font-weight: 400;
       padding: 0;
       text-decoration: none;
@@ -276,7 +276,7 @@ header {
     li.nav-item {
 
       a.nav-link {
-        @include font-size(13px);
+        @include font-size(15px);
 
       }
     }
@@ -291,7 +291,7 @@ header {
     li.nav-item {
       padding: 10px 0;
       a.nav-link {
-        @include font-size(13px);
+        @include font-size(16px);
       }
     }
   }
@@ -311,7 +311,7 @@ header {
     li.nav-item {
       padding: 10px 0;
       a.nav-link {
-        @include font-size(13px);
+        @include font-size(16px);
       }
     }
   }
@@ -343,7 +343,7 @@ header {
       padding: 15px 0;
 
       a.nav-link {
-        @include font-size(16px);
+        @include font-size(17px);
       }
 
     }
@@ -355,7 +355,7 @@ header {
 
 
 }
- // 992px
+// 992px
 @include bp-desktop-large {
   header {
     height: 780px;
@@ -392,14 +392,6 @@ header {
       height: 60px;
       margin: 0 auto;
       list-style: none;
-
-
-      li.nav-item {
-        a.nav-link {
-          @include font-size(17px);
-        }
-
-      }
 
     }
 
@@ -439,8 +431,9 @@ header {
     height: 930px;
 
     .img__name {
-      width: 30%;
-      top: 20%;
+      width: 24%;
+      top: 22%;
+      right: 16px;
     }
   }
 }
