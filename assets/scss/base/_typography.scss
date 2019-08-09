@@ -3,6 +3,7 @@
 html, body {
   font-size: 16px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background:#ffff;
   -webkit-font-smoothing: antialiased;
   @media #{$info-tablet-horizontal} {
     font-size: 15px;

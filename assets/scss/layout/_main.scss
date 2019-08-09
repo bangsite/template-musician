@@ -1,0 +1,101 @@
+#discography {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+
+}
+
+.discography {
+  position: relative;
+  margin: 40px 0;
+
+  &__title {
+    color: #976b4e;
+
+    &:before {
+      content: "";
+      margin: 0 auto;
+      border-top: 1px solid #976b4e;
+      // position: absolute;
+      // top: 54.5%;
+      // left: 0;
+      // right: 0;
+      // bottom: 0;
+      // width: 29%;
+      // z-index: 0;
+    }
+
+  }
+
+  &__subtitle {
+    color: #626769;
+    text-align: center;
+    max-width: 779px;
+    display: block;
+    letter-spacing: 1px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+
+
+  &__info {
+    // margin-bottom: 112px;
+    padding-top: 30px;
+
+    &--left {
+      margin-top: 5px;
+
+      .date {
+        color: #808080;
+      }
+
+      hr {
+        border: .5px solid $color-default-darkest;
+        margin-bottom: 5px;
+        margin-top: 6px;
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 12px;
+
+      }
+    }
+
+    &--right {
+      h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        @include font-size(20px);
+        color: $color-default-darkest;
+        text-align: left;
+        margin-bottom: 24px;
+
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 24px;
+      }
+
+      img__play {
+        text-align: left;
+      }
+    }
+  }
+
+  &__bg {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-discography.png");
+
+  }
+}

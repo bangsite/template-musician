@@ -20,3 +20,60 @@ h1, h2, h3, h4, h5 {
 img {
   max-width: 100%;
 }
+
+.title {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  @include font-size(22px);
+  text-transform: uppercase;
+  // color: #976b4e;
+  text-align: center;
+  padding: 40px 0 20px 0;
+  margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    margin: 0 auto;
+    // border-top: 1px solid #976b4e;
+    position: absolute;
+    top: 62%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    height: 1px;
+    z-index: 0;
+  }
+}
+
+.paratext {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  @include font-size(14px);
+  color: #888;
+  text-align: left;
+
+
+}
+
+.date {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  @include font-size(14px);
+  text-align: left;
+}
+
+.btn--style {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  @include font-size(14px);
+  color: $color-default-darkest;
+  padding: 12px 30px;
+  border: 1px solid #b4b5b5;
+  border-radius: 0;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}

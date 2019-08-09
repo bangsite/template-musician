@@ -10,6 +10,10 @@ $color-default-darker: #acacac;
 $color-default-darkest: #000;
 $color-default-dark: #111111;
 
+// Background
+$bg-lightest:#ffffff;
+$bg-light:rgba(229,230,230,0.5);
+
 // Primary colors
 $color-primary: #EE295F;
 
@@ -39,6 +43,11 @@ $hsize: $size/2;
 //
 // Fonts size
 //
+$cl-font-light:#606060;
+$cl-font-lighest:#798285;
+$cl-font-dark:#111111;
+$cl-font-hover:#000000;
+
 
 //
 // Padding & margin
