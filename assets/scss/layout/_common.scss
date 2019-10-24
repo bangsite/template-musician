@@ -4,13 +4,20 @@ a {
   }
 }
 
-ul, ol, p {
+ul,
+ol,
+p {
   padding: 0;
   margin: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
+  
 }
 
 * {
@@ -21,8 +28,26 @@ img {
   max-width: 100%;
 }
 
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  @include font-size(14px);
+}
+.warrap__title {
+  margin: 0 auto;
+  @include bp-tablet-576{
+    width: 450px;
+  }
+  @include bp-desktop-sm {
+    width: 650px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+}
 .title {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
+  color: $cl-title;
   font-weight: 400;
   @include font-size(22px);
   text-transform: uppercase;
@@ -31,7 +56,12 @@ img {
   padding: 40px 0 20px 0;
   margin: 0 auto;
   position: relative;
-
+  @include bp-desktop-sm {
+    @include font-size(46px);
+  }
+  @include bp-desktop-large {
+    @include font-size(50px);
+  }
   &::before {
     content: "";
     margin: 0 auto;
@@ -44,28 +74,38 @@ img {
     width: 40%;
     height: 1px;
     z-index: 0;
+    @include bp-desktop-sm{
+      top:59%;
+    }
   }
 }
 
+.subtitle {
+  margin-bottom: 50px;
+  color: $cl-subtitle;
+}
+
 .paratext {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   @include font-size(14px);
-  color: #888;
+  color: $cl-text;
   text-align: left;
-
-
+  @include bp-desktop-sm {
+    @include font-size(15px);
+  }
 }
 
 .date {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   @include font-size(14px);
   text-align: left;
+  color: $cl-subtitle;
 }
 
 .btn--style {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   @include font-size(14px);
   color: $color-default-darkest;
