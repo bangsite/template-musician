@@ -131,11 +131,11 @@
       &:hover img {
         @include opacity(0.65);
         background-image: linear-gradient(
-          to right,
-          #f78ca0 0%,
-          #f9748f 19%,
-          #fd868c 60%,
-          #fe9a8b 100%
+                to right,
+                #f78ca0 0%,
+                #f9748f 19%,
+                #fd868c 60%,
+                #fe9a8b 100%
         );
       }
 
@@ -165,7 +165,6 @@
     background-image: url("../img/bg-discographi.png");
   }
 }
-
 @include bp-tablet-576 {
   .discographi {
     &__bg {
@@ -251,6 +250,158 @@
   }
 }
 
+#concert {
+  position: relative;
+  width: 100%;
+}
+
+.concert {
+  position: relative;
+  margin: 40px 0;
+  padding-bottom: 40px;
+
+  &__title {
+    color: #62a2ad;
+
+    &:before {
+      border-top: 1px solid #62a2ad;
+
+      @include bp-tablet-576 {
+        width: 35%;
+      }
+
+      @include bp-desktop-sm {
+        width: 50%;
+      }
+
+      @include bp-desktop-md {
+        width: 57%;
+      }
+    }
+  }
+
+  &__wrapp {
+    position: relative;
+    width: 100%;
+    height: 710px;
+    display: flex;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: -310px center;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-concert.png");
+
+    @include bp-desktop-sm {
+      height: 780px;
+      background-position: 52%;
+    }
+
+    @include bp-desktop-md {
+      background-position: 40%;
+    }
+  }
+
+  &__subtitle {
+    // max-width: 720px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  &__info {
+    padding: 80px 15px 20px 15px;
+    justify-self: center;
+    align-self: center;
+
+    @include bp-desktop-sm {
+      margin: 0 15px;
+    }
+    @include bp-desktop-large {
+      margin: 0 150px 0 30px;
+    }
+
+    @include bp-desktop-md {
+      margin: 0 150px 0 50px;
+    }
+    @include bp-desktop-1280 {
+      margin: 0 300px 0 150px;
+    }
+    @include bp-desktop-lg {
+      margin: 0 330px 0 150px;
+    }
+    @include bp-desktop-ultra {
+      margin: 0 480px 0 250px;
+    }
+
+    &--left {
+      margin-top: 12px;
+
+      .date {
+        color: $cl-subtitle;
+      }
+
+      hr {
+        width: 50%;
+        border: 0.5px solid $color-default-darkest;
+        margin-bottom: 5px;
+        margin-top: 6px;
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 12px;
+        max-width: 575px;
+        display: inline-block;
+        padding: 0 15px 20px 0;
+      }
+    }
+
+    &--right {
+      @include bp-desktop-sm {
+        padding-right: 200px;
+      }
+
+      @include bp-desktop-md {
+        // padding-right: 350px;
+      }
+
+      @include bp-desktop-md {
+        // padding-right: 420px;
+      }
+
+      h3 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        @include font-size(20px);
+        color: $color-default-darkest;
+        text-align: left;
+        margin-bottom: 24px;
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 30px;
+      }
+
+      .btn--style {
+        &:hover {
+          background: $color-default-lightest;
+          border: 1px solid rgba(180, 181, 181, 0.2);
+          color: rgba(0, 0, 0, 0.6);
+
+          box-shadow: 0px 15px 20px rgba(47, 90, 102, 0.4);
+          transform: translateY(-2px);
+        }
+      }
+
+      i.fas {
+        margin-left: 10px;
+      }
+    }
+  }
+}
 
 
 
