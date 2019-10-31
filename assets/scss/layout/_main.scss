@@ -1,0 +1,256 @@
+#discographi {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+
+.discographi {
+  position: relative;
+  margin: 40px 0;
+
+  &_title {
+    color: #976b4e;
+
+    &:before {
+      content: "";
+      margin: 0 auto;
+      border-top: 1px solid #976b4e;
+
+      // position: absolute;
+      // top: 54.5%;
+      // left: 0;
+      // right: 0;
+      // bottom: 0;
+      // width: 29%;
+      // z-index: 0;
+      @include bp-ip6 {
+        width: 37%;
+      }
+
+      @include bp-ip6-plus {
+        width: 34%;
+      }
+
+      @include bp-tablet-576 {
+        width: 30%;
+      }
+
+      @include bp-desktop-sm {
+        width: 50%;
+      }
+    }
+  }
+
+  &_subtitle {
+    text-align: center;
+    max-width: 779px;
+    display: block;
+    letter-spacing: 1px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  &_wrapp {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 200px;
+  }
+
+  &_content {
+    // margin-bottom: 112px;
+
+    h3 {
+      position: relative;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      @include font-size(20px);
+      color: $color-default-darkest;
+      text-align: left;
+      margin-bottom: 15px;
+      margin-top: 10px;
+    }
+
+    .discographi_time {
+      margin-top: 5px;
+
+      .date {
+        color: #808080;
+      }
+
+      hr {
+        border: 0.5px solid $color-default-darkest;
+        margin-bottom: 5px;
+        margin-top: 6px;
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 12px;
+      }
+    }
+
+    .discographi_play {
+      margin: 20px 0 50px 0;
+    }
+
+    p.discographi_para {
+      text-align: left;
+      margin-bottom: 24px;
+    }
+
+    .play {
+      text-align: left;
+    }
+
+    .thumb {
+      position: relative;
+
+      img {
+        vertical-align: middle;
+        border: 0;
+        @include transition(all 0.3s ease-in);
+      }
+
+      .icon-circle-play {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-default-darkest;
+        font-weight: 600;
+        @include font-size(16px);
+        @include transition(all 0.3s ease-in);
+        // @include opacity(0);
+        // @include transform(scale(0));
+      }
+
+      &:hover img {
+        @include opacity(0.65);
+        background-image: linear-gradient(
+          to right,
+          #f78ca0 0%,
+          #f9748f 19%,
+          #fd868c 60%,
+          #fe9a8b 100%
+        );
+      }
+
+      &:hover .icon-circle-play {
+        // @include opacity(1);
+        @include transform(scale(1));
+        color: $color-default-lightest;
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 260px;
+    z-index: 1;
+    display: flex;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-discographi.png");
+  }
+}
+
+@include bp-tablet-576 {
+  .discographi {
+    &__bg {
+      height: 220px;
+    }
+  }
+}
+
+@include bp-tablet-600 {
+  .discographi {
+    &__bg {
+      height: 300px;
+    }
+  }
+}
+
+// 640
+@include bp-tablet-vertical {
+}
+
+// 769px
+@include bp-desktop-sm {
+  .discographi {
+    &_content {
+      h3 {
+        margin-bottom: 25px;
+      }
+
+      .discographi_time {
+        position: absolute;
+        top: 6%;
+        left: -100%;
+        width: 100%;
+      }
+
+      .discographi_play {
+        margin: 30px 0 100px 0;
+      }
+    }
+  }
+}
+
+// 992px
+@include bp-desktop-large {
+  .discographi {
+    &__wrapp {
+      padding-bottom: 250px;
+    }
+
+    &__bg {
+      height: 380px;
+    }
+  }
+}
+
+// 1024px
+@include bp-desktop-md {
+}
+
+// width: 1280px
+@include bp-desktop-1280 {
+  .discographi {
+    &__wrapp {
+      padding-bottom: 300px;
+    }
+
+    &__bg {
+      height: 480px;
+    }
+  }
+}
+
+// width: 1367px
+@include bp-desktop-lg {
+  .discographi {
+    &__wrapp {
+      padding-bottom: 350px;
+    }
+
+    &__bg {
+      height: 540px;
+    }
+  }
+}
+
+
+
+

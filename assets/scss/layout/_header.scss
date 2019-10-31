@@ -6,7 +6,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  color:#111;
+color:#111;
   .img__name {
     position: absolute;
     left: 0;
@@ -355,7 +355,7 @@ header {
 
 
 }
-// 992px
+ // 992px
 @include bp-desktop-large {
   header {
     height: 780px;
@@ -367,7 +367,9 @@ header {
 
   .menu {
     height: 60px;
-
+    .nav-navbar {
+      padding-top: 0;
+    }
     .nav__collapse {
 
       width: 100%;
@@ -378,7 +380,7 @@ header {
       text-align: center;
       overflow: hidden;
       z-index: 3;
-      background: transparent;
+      background: inherit;
       @include transform(none);
       @include transition(none);
     }
@@ -889,6 +891,6 @@ header {
     }
 
     height: 926px;
-
+  
   }
 }
