@@ -864,3 +864,201 @@
 
   }
 }
+
+#upcoming {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: 60%;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-upcoming.png");
+
+  @include bp-tablet-576 {
+    background-position: 50%;
+    height: 690px;
+  }
+
+  @include bp-desktop-sm {
+    background-position: 42%;
+    height: 750px;
+  }
+
+  @include bp-desktop-large {
+    height: 800px;
+  }
+
+  @include bp-desktop-md {
+    height: 850px;
+  }
+
+  @include bp-desktop-1280 {
+    height: 900px;
+  }
+
+  @include bp-desktop-lg {
+    height: 1100px;
+  }
+}
+
+.upcoming {
+  width: 100%;
+
+  &__wrapp {
+    position: absolute;
+    right: 0;
+    // top: 70px;
+    bottom: 70px;
+    left: 15px;
+    padding-right: 15px;
+
+    @include bp-480 {
+      left: 20%;
+    }
+
+    @include bp-tablet-576 {
+      top: 10%;
+      left: 30%;
+    }
+
+    @include bp-desktop-sm {
+      left: 34%;
+    }
+
+    @include bp-desktop-large {
+      left: 42%;
+      right: 5%;
+    }
+
+    @include bp-desktop-md {
+      left: 46%;
+      right: 8%;
+    }
+
+    @include bp-desktop-1280 {
+      left: 49%;
+      right: 10%;
+    }
+
+    @include bp-desktop-lg {
+      top: 15%;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    color: #42717e;
+    margin-right: 40px;
+
+    @include bp-desktop-large {
+      margin-bottom: 30px;
+    }
+
+    @include bp-desktop-1280 {
+      margin-bottom: 50px;
+    }
+
+    @include bp-desktop-lg {
+      margin-bottom: 100px;
+    }
+
+    &:before {
+      width: 55%;
+      left: -3px;
+      margin-left: 0;
+      border-top: 1px solid $color-default-darkest;
+
+      @include bp-ip6 {
+        width: 46%;
+      }
+
+      @include bp-ip6-plus {
+        width: 42%;
+      }
+
+      @include bp-tablet-576 {
+        width: 40%;
+      }
+
+      @include bp-desktop-sm {
+        width: 72%;
+      }
+
+      @include bp-desktop-large {
+        width: 70%;
+      }
+
+      @include bp-desktop-md {
+        width: 76%;
+      }
+
+      @include bp-desktop-1280 {
+        width: 80%;
+      }
+    }
+  }
+
+  &__tour {
+    h4 {
+      text-align: left;
+      @include font-size(18px);
+      padding: 10px 0;
+      margin: 0 auto;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 28%;
+        height: 1px;
+        border-top: 1px solid $color-default-darkest;
+      }
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    letter-spacing: 1px;
+    @include font-size(14px);
+    text-align: left;
+    padding-bottom: 55px;
+    margin: 10px 15px 10px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      left: 27px;
+      bottom: 0;
+      width: 1px;
+      height: 45px;
+      border-left: 1px solid $color-default-darkest;
+    }
+  }
+
+  .date {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .line {
+    position: relative;
+    margin-bottom: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 27px;
+      top: 20px;
+      width: 1px;
+      height: 80px;
+      border-left: 1px solid $color-default-darkest;
+    }
+  }
+}
